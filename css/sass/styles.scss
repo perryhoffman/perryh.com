@@ -1,0 +1,88 @@
+@import "compass";
+@import "compass/css3";
+
+/* Variables & Mixins */
+$primary: #62A894;
+$secondary: #C1CE96;
+$dark-alt: #353129;
+$dark-grey: #484A47;
+$light-grey: #EEEEEE;
+
+@mixin alt-font($size: 12px, $weight: normal, $family: "corner-store") {
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $family;
+}
+
+
+/* Nav Styles */
+.top-bar-section li a:not(.button) {
+  line-height: 80px;
+  color: $light-grey;
+  background: $dark-grey;
+  &:hover {
+    background: $primary;
+  }
+}
+.top-bar-section ul li.active > a {
+  color: #687D77;
+  color: $light-grey;
+  background: $dark-grey;
+}
+.top-bar, .logo {
+  height: 80px;
+}
+.top-bar {
+  background: $dark-grey;
+}
+.logo {
+  width: 80px;
+  background-color: $primary;
+}
+
+/* Header Styles */
+.header {
+  height: 500px;
+  width: 100%;
+  background-image: url('../img/header.jpg');
+  background-size: cover;
+  background-position: center;
+  h3{
+    color: #fff;
+    font-style: normal;
+    @include alt-font(42px, 400, "corner-store");
+  }
+  .about-link, .work-link {
+    width: 125px;
+    position: absolute;
+    top: 0;
+    line-height: 450px;
+    a { color: #fff; }
+  }
+  .about-link { left: 200px; }
+  .work-link { right: 200px; }
+}
+
+/* Main Content Styles */
+.about {
+  padding: 60px 0px;
+  background-color: #ECEBF0;
+  border-top: 3px solid $dark-alt;
+  .selfie {
+    max-width: 100%;
+    @include border-radius(50%);
+  }
+  .title {
+    margin: 0px;
+    @include alt-font(36px, 400, "corner-store");
+  }
+  .sub-title {
+    margin: 0px 0px 20px 0px;
+    line-height: 20px;
+  }
+  .meta {
+    border-top: thin solid $dark-grey;
+    border-bottom: thin solid $dark-grey;
+    line-height: 35px;
+  }
+}
