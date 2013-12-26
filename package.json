@@ -1,0 +1,21 @@
+{
+  "name": "perryh",
+  "description": "Perry Hoffman Portfolio",
+  "version": "0.0.1",
+  "author": {
+    "name": "Perry Hofman",
+    "email": "perryjhoffman@gmail.com",
+    "url": "https://github.com/perryhoffman"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/perryhoffman/perryh.com.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-compass": "~0.7.0",
+    "grunt-contrib-copy": "~0.4.1"
+  }
+}
