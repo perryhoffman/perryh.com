@@ -1,5 +1,5 @@
-.temp/
 .sass-cache/
+.temp/
 .idea/
 .DS_STORE
 node_modules/

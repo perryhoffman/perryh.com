@@ -23,11 +23,14 @@ $(document).ready(function(){
   <!-- Watch Scrollbar -->
   $window.scroll(function(e){
     var scrollHeight = $window.scrollTop();
+    var screenWidth  = $(window).width();
     var $btn         = $('.top-btn');
-    if (scrollHeight >= 300) {
-      $btn.fadeIn('slow');
+    if(screenWidth <= 600){
+      return $btn.fadeOut('slow');;
+    } else if(scrollHeight >= 300) {
+      return $btn.fadeIn('slow');
     } else if($btn.css('display') != 'none') {
-      $btn.fadeOut('slow');
+      return $btn.fadeOut('slow');
     }
   });
 });
